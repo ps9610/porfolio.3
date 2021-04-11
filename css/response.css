@@ -44,6 +44,8 @@
 @media all and (max-width:1040px){
     #wrap #footer .footer2 .wrap .gap .container > ul .left-wrap {width:100%;max-width:802.781px;float:none;}
     #wrap #footer .footer2 .wrap .gap .container > ul .right-wrap {width:100%;max-width:202px;float:none;}
+
+    .quick {display:none;}
 }
 @media all and (max-width:1020px){
     #wrap #main #section02 .wrap .gap .container .title-wrap {margin:4.12796698%/* 40px */ 0;}

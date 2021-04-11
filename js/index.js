@@ -402,7 +402,8 @@
             var cnt2 = 0;
             var setId2 = 0;
             var _pageBtn = _section01.find(".pageBtn");
-            var url = null;
+            var _temporary = null;
+            var x = null;
 
             //섹션1 높이 설정
             setTimeout(resizeFn, 10);
@@ -421,9 +422,23 @@
                     _slide.eq(cnt).find("h3").stop().animate({ marginTop : -20, opacity : 1 },900)
                 });
             }
+            function _titleNextMovingFn(){
+                _slide.find("h2").stop().animate({ marginTop : -150, opacity : 0 },0,function(){
+                    _slide.find("h3").stop().animate({ marginTop : -70, opacity : 0 },0)
+                });
+            }
+
+            titlePrevMovingFn();
             function titlePrevMovingFn(){
                 _slide.eq(cnt).find("h2").stop().animate({ marginTop : -60, opacity : 1 },800,function(){
                     _slide.eq(cnt).find("h3").stop().animate({ marginTop : -20, opacity : 1 },900)
+                });
+                //console.log(cnt);
+            }
+            
+            function _titlePrevMovingFn(){
+                _slide.find("h2").stop().animate({ marginTop : -150, opacity : 0 },0,function(){
+                    _slide.find("h3").stop().animate({ marginTop : -70, opacity : 0 },0)
                 });
                 //console.log(cnt);
             }
@@ -437,17 +452,33 @@
 
             function mainNextSlideFn(){ //눈에 보여야 하는게 z-index 3
                 _slide.css({zIndex:1});
-                _slide.eq(cnt==0? n:cnt-1).css({zIndex:2});
+                if(_temporary!==null){    
+                    x = _temporary; //클릭 이전 실행 중이었던거
+                }
+                else{
+                    x = cnt==0?n:cnt-1;
+                }
+                _slide.eq(x).css({zIndex:2});
                 _slide.eq(cnt).css({zIndex:3}).stop().animate({ opacity:0 },0).stop().animate({ opacity:1 },800,function(){
+                    _titleNextMovingFn();
+                    _titlePrevMovingFn();
                     titleNextMovingFn();
                 });
                 paginationFn();
             }
             function mainPrevSildeFn(){ //현재 눈에 보이는게 없어져야함
-                _slide.css({zIndex:1}).stop().animate({ opacity:1 },0);
+                _slide.css({zIndex:1}).stop().animate({ opacity:1 },0);                
                 _slide.eq(cnt).css({zIndex:2});
-                _slide.eq(cnt==n? 0:cnt+1).css({zIndex:3}).stop().animate({ opacity:0 },800,function(){
-                    titlePrevMovingFn();
+                if(_temporary!==null){    
+                    x = _temporary; //클릭 이전 실행 중이었던거
+                }
+                else{
+                    x = cnt==n? 0:cnt+1;
+                }
+                _slide.eq(x).css({zIndex:3}).stop().animate({ opacity:0 },800,function(){
+                    _titleNextMovingFn();
+                    _titlePrevMovingFn();
+                    titlePrevMovingFn();                    
                 });
                 paginationFn();
             }
@@ -483,12 +514,17 @@
                 }
             });
 
+            paginationFn();
             //페이지네이션
             function paginationFn(){
                 var z = cnt;
                 z>n? z=0 : cnt;
                 _pageBtn.removeClass("addEffect");
-                _pageBtn.eq(z).addClass("addEffect");
+                _pageBtn.addClass("addEffect2");
+                _pageBtn.eq(z).removeClass("addEffect2").fadeIn(0, function(){
+                    $(this).addClass("addEffect");
+                });
+              
             }
 
             _pageBtn.each(function(i){
@@ -497,7 +533,7 @@
                     click : function(e){
                         e.preventDefault();
                         timerFn();
-                        var _temporary = cnt;
+                        _temporary = cnt;
                         cnt = i;
                         //console.log("tem",_temporary);
                         //console.log("cnt",cnt);
@@ -516,7 +552,7 @@
                 cnt2 = 0;
                 setId2 = setInterval(function(){
                     cnt2++;
-                    console.log(cnt2);
+                    // console.log(cnt2);
                     if(cnt2>7){
                         clearInterval(setId2);
                         autoTimerFn();

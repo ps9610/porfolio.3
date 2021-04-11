@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- saved from url=(0160)http://127.0.0.1:5500/01_21_vue.js/vue_16_vue_%ED%8F%BC%EC%86%8D%EC%84%B1_v-model_%EB%94%94%EB%A0%89%ED%8B%B0%EB%B8%8C_%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue 폼속성 v-model 디렉티브</title>
+    <script src="./vue 폼속성 v-model 디렉티브_files/jquery-1.12.4.min.js.다운로드"></script>
+    <script src="./vue 폼속성 v-model 디렉티브_files/vue.js.다운로드"></script>
+    
+    <style>
+        body {text-align:center;}
+        #app {padding-top:50px;}
+        h1 {color:#3bc;font-size:40px;margin-top:50px;}
+        button {display:inline-block;width:200px;height:50px;background:#000;color:#fff;margin-top:30px;font-size:20px;cursor:pointer;}
+        .image1 img {width:auto;height:400px;}
+        .image1.addClass img {width:auto;height:800px;border:4px dotted #000;}
+
+        .image2 img {width:auto;height:400px;}
+        .image2.addClass img {width:auto;height:800px;border:4px dotted #000;}
+        /* addClass 속성이 생기면 스타일이 적용된다. */
+    </style>
+</head>
+<body style="">
+    <h1>vue 폼속성 v-model 디렉티브</h1>
+    <div id="app"><input type="text" placeholder="입력상자내용입니다."> <h2>입력 메시지 내용은 입니다.</h2></div>
+    <script>
+        const obj = new Vue({
+            el:"#app",
+            data:{
+                //msg : ` `
+            },
+        })
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

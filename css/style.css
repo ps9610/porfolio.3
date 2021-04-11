@@ -460,27 +460,27 @@
 #wrap #footer .footer2 .wrap .gap .container > ul .right-wrap .right-row3 > ul > li .site:hover {color:#fff;background:#4674c9;}
 #wrap #footer .footer2 .wrap .gap .container > ul .right-wrap .right-row3 > ul > li .site:focus {color:#fff;background:#4674c9;}
 
-.go-top {z-index:4;position:fixed;background:#272936;top:33.5%;right:0;width:73px;height:auto;}
-.go-top .wrap {width:100%;height:100%;}
-.go-top .wrap .gap {width:100%;height:100%;}
-.go-top .wrap .gap .container {width:100%;height:100%;}
-.go-top .wrap .gap .container > ul {width:100%;height:100%;}
-.go-top .wrap .gap .container > ul > li {padding:6px 0;width:100%;}
-.go-top .wrap .gap .container > ul .link > ul {width:100%;}
-.go-top .wrap .gap .container > ul .link > ul > li {width:50%;float:left;}
-.go-top .wrap .gap .container > ul .link > ul > li > a {width:100%;display:block;height:36.5px}
-.go-top .wrap .gap .container > ul .link > ul > li:nth-child(1) > a {background:url(../img/spr_ico_quick.png) no-repeat -4% 100%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .link > ul > li:nth-child(2) > a {background:url(../img/spr_ico_quick.png) no-repeat 11% 100%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .link > ul > li:nth-child(3) > a {background:url(../img/spr_ico_quick.png) no-repeat 31% 100%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .link > ul > li:nth-child(4) > a {background:url(../img/spr_ico_quick.png) no-repeat 65% 111%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul > li > a {display:block;width:100%;}
-.go-top .wrap .gap .container > ul > li > a > span {display:block;width:100%;color:#fff;font-size:11px;line-height:170%;text-align:center;margin-bottom:5px;}
-.go-top .wrap .gap .container > ul > li > a > span > i {display:block;width:30px;height:30px;margin:0 auto;}
-.go-top .wrap .gap .container > ul .locate > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat -3% -12%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .whole > a > span > i {width:100%;margin:0;background:url(../img/spr_ico_quick.png) no-repeat 11% -20%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .terminal > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 40% -18%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .online > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 78.5% -4%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .airbot > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 100% 94%;background-size:267px 67px;}
-.go-top .wrap .gap .container > ul .top > a {display:block;width:100%;color:#fff;font-size:11px;line-height:170%;text-align:center;margin-bottom:5px;}
+.quick {z-index:4;position:fixed;background:#272936;top:33.5%;right:0;width:73px;height:auto;}
+.quick .wrap {width:100%;height:100%;}
+.quick .wrap .gap {width:100%;height:100%;}
+.quick .wrap .gap .container {width:100%;height:100%;}
+.quick .wrap .gap .container > ul {width:100%;height:100%;}
+.quick .wrap .gap .container > ul > li {padding:6px 0;width:100%;}
+.quick .wrap .gap .container > ul .link > ul {width:100%;}
+.quick .wrap .gap .container > ul .link > ul > li {width:50%;float:left;}
+.quick .wrap .gap .container > ul .link > ul > li > a {width:100%;display:block;height:36.5px}
+.quick .wrap .gap .container > ul .link > ul > li:nth-child(1) > a {background:url(../img/spr_ico_quick.png) no-repeat -4% 100%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .link > ul > li:nth-child(2) > a {background:url(../img/spr_ico_quick.png) no-repeat 11% 100%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .link > ul > li:nth-child(3) > a {background:url(../img/spr_ico_quick.png) no-repeat 31% 100%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .link > ul > li:nth-child(4) > a {background:url(../img/spr_ico_quick.png) no-repeat 65% 111%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul > li > a {display:block;width:100%;}
+.quick .wrap .gap .container > ul > li > a > span {display:block;width:100%;color:#fff;font-size:11px;line-height:170%;text-align:center;margin-bottom:5px;}
+.quick .wrap .gap .container > ul > li > a > span > i {display:block;width:30px;height:30px;margin:0 auto;}
+.quick .wrap .gap .container > ul .locate > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat -3% -12%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .whole > a > span > i {width:100%;margin:0;background:url(../img/spr_ico_quick.png) no-repeat 11% -20%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .terminal > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 40% -18%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .online > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 78.5% -4%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .airbot > a > span > i {background:url(../img/spr_ico_quick.png) no-repeat 100% 94%;background-size:267px 67px;}
+.quick .wrap .gap .container > ul .top > a {display:block;width:100%;color:#fff;font-size:11px;line-height:170%;text-align:center;margin-bottom:5px;}
 
 .w3c {z-index:4;position:fixed;bottom:0;left:0;}
